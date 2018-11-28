@@ -28,8 +28,8 @@ import javax.annotation.Resource;
 public class IndexService {
     private static final Logger LOG = LoggerFactory.getLogger(IndexService.class);
 
-    @Resource
-    protected RedisTemplate<String, Object> redisTemplate;
+    @Autowired
+    protected RedisTemplate redisTemplate;
 
     /**
      * 仅演示用,新增用户
