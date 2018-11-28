@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.iplatform.example</groupId>
         <artifactId>example-mongodb</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.0.100</version>
         <relativePath>../</relativePath>
     </parent>
     <dependencies>
