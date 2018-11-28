@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.iplatform.example</groupId>
     <artifactId>example-mongodb-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0.100</version>
     <name>example-mongodb-service</name>
     <description>service</description>
     <packaging>jar</packaging>
