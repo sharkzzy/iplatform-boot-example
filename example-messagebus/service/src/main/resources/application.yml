@@ -1,0 +1,11 @@
+discovery.server.address: http://10.22.1.234:8761/eureka/
+server:
+  port: 8081
+  host: localhost
+  contextPath: /myprojectservice
+
+spring:
+  cloud:
+    config:
+      enabled: true
+      profile: test
