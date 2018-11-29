@@ -33,7 +33,7 @@ public class IndexService {
     private static final Logger LOG = LoggerFactory.getLogger(IndexService.class);
 
 
-    @Autowired
+    @Autowired(required = false)
     private MessageBusService messageBusService;
     /**
      * 仅演示用,发送Queue消息
