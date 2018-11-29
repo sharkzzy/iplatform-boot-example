@@ -1,0 +1,31 @@
+discovery.server.address: https://localhost:8761/eureka/ 
+server:
+  port: 8083
+  host: localhost
+  contextPath: /myprojectservice
+
+spring:
+  mvc:
+    dispatch-trace-request: true
+  datasource:
+    platform: mysql
+    dataSourceClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/authdb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    username: authdb-user
+    password: authdb-password
+    initialize: false
+    sql-script-encoding: utf-8
+    continue-on-error: true
+    test-while-idle: true
+    time-between-eviction-runs-millis: 300000
+    min-evictable-idle-time-millis: 30000
+    validation-query: SELECT 1
+    max-active: 100
+    max-idle: 5
+    min-idle: 2
+    max-wait: 30000
+
+# 不连接注册中心
+eureka.client.enabled: false
+
+#flyway.baseline-version: 1.0.0.100.1
