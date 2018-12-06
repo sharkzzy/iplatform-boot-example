@@ -23,20 +23,8 @@
             <artifactId>iplatform-service</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>1.8.0.RELEASE</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-data-keyvalue</artifactId>
-                    <groupId>org.springframework.data</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
         </dependency>
     </dependencies>
 	<build>
