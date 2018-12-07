@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.iplatform.example</groupId>
-    <artifactId>example-redis-service</artifactId>
+    <artifactId>example-logger-service</artifactId>
     <version>1.0.0.100</version>
-    <name>example-redis-service</name>
+    <name>example-logger-service</name>
     <description>service</description>
     <packaging>jar</packaging>
     <parent>
         <groupId>org.iplatform.example</groupId>
-        <artifactId>example-redis</artifactId>
+        <artifactId>example-logger</artifactId>
         <version>1.0.0.100</version>
         <relativePath>../</relativePath>
     </parent>
@@ -23,8 +23,8 @@
             <artifactId>iplatform-service</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.11</artifactId>
         </dependency>
     </dependencies>
 	<build>

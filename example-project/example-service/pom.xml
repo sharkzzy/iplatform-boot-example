@@ -2,18 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.iplatform.example</groupId>
-    <artifactId>example-redis-service</artifactId>
+    <artifactId>example-service</artifactId>
     <version>1.0.0.100</version>
-    <name>example-redis-service</name>
-    <description>service</description>
+    <name>example-service</name>
+    <description>example-service</description>
     <packaging>jar</packaging>
     <parent>
         <groupId>org.iplatform.example</groupId>
-        <artifactId>example-redis</artifactId>
+        <artifactId>example-project</artifactId>
         <version>1.0.0.100</version>
         <relativePath>../</relativePath>
     </parent>
     <dependencies>
+    	<dependency>
+            <groupId>org.iplatform.example</groupId>
+            <artifactId>example-util</artifactId>
+            <version>1.0.0.100</version>
+        </dependency>
         <dependency>
             <groupId>org.iplatform</groupId>
             <artifactId>iplatform-util</artifactId>
@@ -21,10 +26,6 @@
         <dependency>
             <groupId>org.iplatform</groupId>
             <artifactId>iplatform-service</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
         </dependency>
     </dependencies>
 	<build>

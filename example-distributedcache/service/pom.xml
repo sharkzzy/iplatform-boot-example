@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.iplatform.example</groupId>
-    <artifactId>example-redis-service</artifactId>
+    <artifactId>example-distributedcache-service</artifactId>
     <version>1.0.0.100</version>
-    <name>example-redis-service</name>
+    <name>example-distributedcache-service</name>
     <description>service</description>
     <packaging>jar</packaging>
     <parent>
         <groupId>org.iplatform.example</groupId>
-        <artifactId>example-redis</artifactId>
+        <artifactId>example-distributedcache</artifactId>
         <version>1.0.0.100</version>
         <relativePath>../</relativePath>
     </parent>
@@ -23,8 +23,14 @@
             <artifactId>iplatform-service</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.8.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
         </dependency>
     </dependencies>
 	<build>
