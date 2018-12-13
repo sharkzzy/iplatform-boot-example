@@ -23,6 +23,7 @@ import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.deeplearning4j.spark.api.stats.SparkTrainingStats;
 import org.deeplearning4j.spark.datavec.DataVecDataSetFunction;
+import org.deeplearning4j.spark.impl.multilayer.SparkDl4jMultiLayer;
 import org.deeplearning4j.spark.impl.paramavg.ParameterAveragingTrainingMaster;
 import org.deeplearning4j.spark.stats.EventStats;
 import org.deeplearning4j.spark.stats.StatsUtils;
@@ -35,7 +36,6 @@ import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
-import org.deeplearning4j.spark.impl.multilayer.SparkDl4jMultiLayer;
 import org.springframework.stereotype.Component;
 
 import java.io.File;

@@ -12,7 +12,6 @@ import java.util.*;
 
 /**
  * SMOTE：随机选取比例小的数据进行插值，直到达到数据平衡
- * https://www.jianshu.com/p/ecbc924860af
  */
 public class SmoteSamplingPreProcessor implements DataSetPreProcessor {
 

@@ -1,7 +1,5 @@
 package org.iplatform.example.service.examples.arbiter;
 
-import org.iplatform.example.service.examples.IExample;
-import org.springframework.stereotype.Component;
 import org.deeplearning4j.api.storage.StatsStorage;
 import org.deeplearning4j.arbiter.MultiLayerSpace;
 import org.deeplearning4j.arbiter.conf.updater.SgdSpace;
@@ -33,9 +31,11 @@ import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.ui.api.UIServer;
 import org.deeplearning4j.ui.storage.FileStatsStorage;
+import org.iplatform.example.service.examples.IExample;
 import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.List;

@@ -7,21 +7,14 @@ import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 import org.datavec.api.transform.TransformProcess;
 import org.datavec.api.transform.analysis.DataAnalysis;
-import org.datavec.api.transform.analysis.columns.DoubleAnalysis;
-import org.datavec.api.transform.condition.ConditionOp;
-import org.datavec.api.transform.condition.column.CategoricalColumnCondition;
-import org.datavec.api.transform.condition.column.DoubleColumnCondition;
-import org.datavec.api.transform.filter.ConditionFilter;
 import org.datavec.api.transform.schema.Schema;
 import org.datavec.api.transform.transform.time.DeriveColumnsFromTimeTransform;
 import org.datavec.api.transform.ui.HtmlAnalysis;
-import org.datavec.api.writable.DoubleWritable;
 import org.datavec.api.writable.Writable;
 import org.datavec.spark.transform.AnalyzeSpark;
 import org.datavec.spark.transform.SparkTransformExecutor;
 import org.datavec.spark.transform.misc.StringToWritablesFunction;
 import org.iplatform.example.service.examples.IExample;
-import org.iplatform.example.service.examples.ailabs.AILabs;
 import org.joda.time.DateTimeFieldType;
 import org.joda.time.DateTimeZone;
 import org.slf4j.Logger;
@@ -31,7 +24,6 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 
 @Component

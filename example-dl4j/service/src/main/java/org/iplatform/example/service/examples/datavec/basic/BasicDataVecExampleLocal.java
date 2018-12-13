@@ -18,7 +18,6 @@ import org.datavec.api.transform.transform.time.DeriveColumnsFromTimeTransform;
 import org.datavec.api.writable.DoubleWritable;
 import org.datavec.api.writable.Writable;
 import org.datavec.local.transforms.LocalTransformExecutor;
-import org.datavec.local.transforms.misc.WritablesToStringFunction;
 import org.iplatform.example.service.examples.IExample;
 import org.joda.time.DateTimeFieldType;
 import org.joda.time.DateTimeZone;

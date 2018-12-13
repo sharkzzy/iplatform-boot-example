@@ -2,16 +2,11 @@ package org.iplatform.example.service.examples.datavec.analysis;
 
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
-import org.datavec.api.records.writer.RecordWriter;
-import org.datavec.api.records.writer.impl.csv.CSVRecordWriter;
 import org.datavec.api.split.FileSplit;
-import org.datavec.api.split.partition.NumberOfRecordsPartitioner;
-import org.datavec.api.split.partition.Partitioner;
 import org.datavec.api.transform.TransformProcess;
 import org.datavec.api.transform.schema.Schema;
 import org.datavec.api.writable.Writable;
 import org.datavec.local.transforms.LocalTransformExecutor;
-import org.datavec.local.transforms.LocalTransformProcessRecordReader;
 import org.datavec.local.transforms.misc.WritablesToStringFunction;
 import org.iplatform.example.service.examples.IExample;
 import org.nd4j.linalg.io.ClassPathResource;
@@ -19,7 +14,6 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Component
