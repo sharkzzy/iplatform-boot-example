@@ -13,19 +13,10 @@ import org.junit.Test;
 public class WebServiceTest{
 
     @Test
-    public void testDynamicCity() throws Exception {
-        JaxWsDynamicClientFactory jaxWsDynamicClientFactory = JaxWsDynamicClientFactory.newInstance();
-
-        Client client = jaxWsDynamicClientFactory.createClient("http://localhost:8081/myprojectservice/test/city?wsdl");
-        Object[] objects = client.invoke("getCityName","1");
-        Assert.assertEquals("beijing", objects[0]);
-    }
-
-    @Test
     public void testDynamic() throws Exception {
         JaxWsDynamicClientFactory jaxWsDynamicClientFactory = JaxWsDynamicClientFactory.newInstance();
         Client client = jaxWsDynamicClientFactory.createClient("http://localhost:8081/myprojectservice/test/user?wsdl");
-        Object[] objects=client.invoke("getName","411001");
+        Object[] objects=client.invoke("getUser","411001");
         Assert.assertEquals("zhansan", objects[0]);
     }
 
