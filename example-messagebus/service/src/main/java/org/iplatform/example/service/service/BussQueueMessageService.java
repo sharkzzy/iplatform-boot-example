@@ -18,11 +18,11 @@ public class BussQueueMessageService extends AbstractMessageBusListener {
     private static final Logger LOG = LoggerFactory.getLogger(IndexService.class);
 
     @Override
-    @MessageBusConsumer(destination = "Q_MS_TEST")
+    @MessageBusConsumer(destination = "Q_MS_EVENT")
     public void onMessageBus(Message message){
         if(message instanceof TextMessage){
             try {
-                LOG.info("Queue[Q_MS_TEST]收到消息:{}",((TextMessage)message).getText());
+                LOG.info("Queue[Q_MS_EVENT]收到消息:{}",((TextMessage)message).getText());
             } catch (JMSException e) {
                 LOG.error("消息接收错误",e);
             }

@@ -64,6 +64,11 @@ public class IndexService {
         try {
             Person person = (Person) redisTemplate.opsForValue().get("1");
 
+//            redisTemplate.opsForHash()
+//            redisTemplate.opsForList()
+//            redisTemplate.opsForSet()
+//            redisTemplate.opsForZSet()
+
             response.setData(person);
             response.setSuccess(Boolean.TRUE);
             return new ResponseEntity(response, HttpStatus.OK);
